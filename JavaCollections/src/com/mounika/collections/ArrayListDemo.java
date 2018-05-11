@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class ArrayListDemo {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ArrayList<Integer> arrayListInt = new ArrayList<Integer>();
 		int sum = 0;
 		arrayListInt.add(1);
