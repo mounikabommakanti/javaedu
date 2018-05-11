@@ -1,0 +1,5 @@
+Comparator Vs Comparable:
+1.Comparator allows multiple element sorting where as Comparable allow only one sort by an element at a time.
+2.Original class is permanently changed when modifications are done to the class that implements comparable unlike Comparator.
+3.Comparable provides compareTo() and Comparatr provides compare() to sort elements.
+4.Elements of comparable type are sorted by Collections.sort(List), whereas Collections.sort(List,Comparator) in case of Comparator.
