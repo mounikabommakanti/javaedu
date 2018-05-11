@@ -31,8 +31,15 @@ public class PersonDAO {
 			System.out.println(rs.getString("name"));
 			System.out.println(rs.getInt("age"));
 		}
-
-		// sSystem.out.println("row in");
-
 	}
+
+	public void updatePerson(int id, String name) throws SQLException {
+		Connection con = SqlConnection.getConnection();
+		String updateTableSQL = "UPDATE Person SET name=? WHERE id=?";
+		PreparedStatement ps = con.prepareStatement(updateTableSQL);
+		ps.setInt(2, id);
+		ps.setString(1, name);
+		ps.executeUpdate();
+	}
+
 }

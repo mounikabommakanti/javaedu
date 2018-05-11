@@ -36,7 +36,8 @@ public class SqlConnection {
 	public static void main(String args[]) throws SQLException {
 
 		PersonDAO persondao = new PersonDAO();
-		// persondao.insert(2, "mounika", 23);
+		persondao.getPerson(1);
+		persondao.updatePerson(1, "priya");
 		persondao.getPerson(1);
 
 	}
