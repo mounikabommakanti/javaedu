@@ -4,12 +4,9 @@ mysql>create table Person(id MEDIUMINT NOT NULL AUTO_INCREMENT,name varchar(50) 
 
 Insert values:
 
-insert into Person values(NULL,'mounika','street1','dallas','TX','75638')
+mysql>insert into Person values(NULL,'mounika','street1','dallas','TX','75638');
 
 Output:
-mysql> insert into Person values(NULL,'Preethi',25,null,null,null,null);
-Query OK, 1 row affected (0.12 sec)
-
 mysql> select *from Person;
 +----+---------+------+----------+----------+-------+-------+
 | id | name    | age  | address  | city     | state | zip   |
