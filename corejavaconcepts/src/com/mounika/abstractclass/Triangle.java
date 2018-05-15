@@ -24,8 +24,10 @@ public class Triangle extends Shape {
 
 	public static void main(String[] args) {
 		Triangle triangle = new Triangle(3, 3, 3);
-		System.out.println(triangle.area());
-		System.out.println(triangle.perimeter());
+		String shapename = triangle.shapeName("triangle");
+		System.out.println(shapename);
+		System.out.println("area of " + shapename + "is " + triangle.area()+" sq units");
+		System.out.println("Perimeter of " + shapename + " is " + triangle.perimeter()+" units");
 
 	}
 
