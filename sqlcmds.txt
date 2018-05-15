@@ -1,0 +1,28 @@
+Create a table Person:
+
+mysql>create table Person(id MEDIUMINT NOT NULL AUTO_INCREMENT,name varchar(50) not null,age int null,address varchar(50) null , city varchar(50), state varchar(20), zi null, PRIMARY KEY(id));
+
+Insert values:
+
+insert into Person values(NULL,'mounika','street1','dallas','TX','75638')
+
+Output:
+mysql> insert into Person values(NULL,'Preethi',25,null,null,null,null);
+Query OK, 1 row affected (0.12 sec)
+
+mysql> select *from Person;
++----+---------+------+----------+----------+-------+-------+
+| id | name    | age  | address  | city     | state | zip   |
++----+---------+------+----------+----------+-------+-------+
+|  1 | mounika |   23 | street1  | dallas   | TX    | 75638 |
+|  2 | david   |   24 | street2  | Frisco   | TX    | 72638 |
+|  3 | Charles |   30 | street2  | Sanjose  | CA    | 95051 |
+|  4 | James   |   35 | rolater  | Sanbruno | CA    | 75063 |
+|  5 | Brandon |   40 | Sanpaulo | Austin   | TX    | 85063 |
+|  6 | Charlie |   20 | Stockard | Saltlake | UT    | 75035 |
+|  7 | William |   20 | NULL     | NULL     | UT    | 75035 |
+|  8 | Ram     |   22 |          |          | UT    | 75035 |
+| 18 | Pavan   |   25 | NULL     | NULL     | NULL  | NULL  |
+| 19 | Preethi |   25 | NULL     | NULL     | NULL  | NULL  |
++----+---------+------+----------+----------+-------+-------+
+10 rows in set (0.00 sec)
