@@ -1,0 +1,4 @@
+Double-checked locking in Singleton Class implementation:
+Double Check locking ensures that Singleton Class is instantiated only once.
+Initial check is performed before actually acquiring the lock.
+After acquiring the lock , once again the check is performed if the object is already initialized.
