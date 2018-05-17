@@ -1,0 +1,7 @@
+checked exception:These exception are checked during compile time and can be handle using try&catch block or using throws keyword.
+eg:SQL exception
+
+Unchecked Exception:These exceptions are not identified during compile time.But during run time, when a user gives bad data, then exception arises, such exceptions are called unchecked exception.
+eg:Arithmetic exception.
+
+Run time Exception:RunTimeException is the superclass.This Super class and its subclasses  are Unchecked Exceptions.
